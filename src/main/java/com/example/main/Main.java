@@ -13,7 +13,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Category c1 = new Category(1,"Electonics");
+		/*Category c1 = new Category(1,"Electonics");
 		Category c2 = new Category(2,"Food");
 		Category c3 = new Category(3,"Cloths");
 		Category c4 = new Category(4,"Entertainment");
@@ -61,7 +61,7 @@ public class Main {
 		System.out.println("Category List Size "+ myShoppingCart.getCategoryList().size());
 
 		// System.out.println("ProductList Size " +
-		// myShoppingCart.getProductList().size());
+*/		// myShoppingCart.getProductList().size());
 	}
 
 }
