@@ -3,8 +3,9 @@ package com.example.main;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.dao.CartOperation;
-import com.example.dao.CartOperationImpl;
+import com.example.dao.CartOperationDao;
+import com.example.dao.CartOperationDaoImpl;
+import com.example.dao.CategoryOperationDaoImpl;
 import com.example.model.Cart;
 import com.example.model.Category;
 import com.example.model.Product;
@@ -62,6 +63,9 @@ public class Main {
 
 		// System.out.println("ProductList Size " +
 */		// myShoppingCart.getProductList().size());
+		
+		CategoryOperationDaoImpl obj =  new CategoryOperationDaoImpl();
+		obj.createNewCategory("cat111","test");
 	}
 
 }

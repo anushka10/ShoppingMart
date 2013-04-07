@@ -9,16 +9,34 @@ import java.util.Map;
 public class Cart implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
+	private String cartId; 
 	private String cartName;
 	List<Product> productList;
 	Map<String, Integer> productMap;
 	List categoryList;
-	public Cart(String cartName) {
+	public Cart(String cartId,String cartName) {
+		this.cartId = cartId;
 		this.cartName = cartName;
 		productList = new ArrayList<Product>();
 		categoryList = new ArrayList<Product>();
 		productMap = new HashMap<String, Integer>();
 	}
+	
+	
+	public String getCartId() {
+		return cartId;
+	}
+
+
+	public void setCartId(String cartId) {
+		this.cartId = cartId;
+	}
+
+
+	public void setCartName(String cartName) {
+		this.cartName = cartName;
+	}
+
 
 	public List<Product> getProductList() {
 		return productList;
